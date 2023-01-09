@@ -1,0 +1,70 @@
+[
+    {
+      "id": 1,  
+      "title": "Idoukan",
+      "image": "product1.jpg",
+      "price": 50,
+      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus mi nulla, nec pulvinar risus blandit sed. Mauris dapibus nisi lacus, eget venenatis ipsum feugiat a. Aenean gravida sapien scelerisque, varius sem vel, viverra lorem. Nulla id pulvinar nulla, ut imperdiet nisl. Donec facilisis auctor nisl non tristique. Aliquam fringilla, felis ut sodales elementum, augue mauris eleifend eros, sit amet ultricies arcu mi quis nisi. Sed eu ipsum nec quam sollicitudin sagittis. Sed at tempor dui. In a leo velit. Aliquam erat volutpat. Curabitur congue orci vel augue interdum, eu scelerisque mi sodales. Vivamus laoreet eleifend viverra."
+
+    },
+    {
+        "id": 2,
+      "title": "Agharaff",
+      "image": "product2.jpg",
+      "price": 100,
+      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus mi nulla, nec pulvinar risus blandit sed. Mauris dapibus nisi lacus, eget venenatis ipsum feugiat a. Aenean gravida sapien scelerisque, varius sem vel, viverra lorem. Nulla id pulvinar nulla, ut imperdiet nisl. Donec facilisis auctor nisl non tristique. Aliquam fringilla, felis ut sodales elementum, augue mauris eleifend eros, sit amet ultricies arcu mi quis nisi. Sed eu ipsum nec quam sollicitudin sagittis. Sed at tempor dui. In a leo velit. Aliquam erat volutpat. Curabitur congue orci vel augue interdum, eu scelerisque mi sodales. Vivamus laoreet eleifend viverra."
+
+    },
+    {
+        "id": 3,
+      "title": "Tabaradt",
+      "image": "product3.jpg",
+      "price": 75,
+      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus mi nulla, nec pulvinar risus blandit sed. Mauris dapibus nisi lacus, eget venenatis ipsum feugiat a. Aenean gravida sapien scelerisque, varius sem vel, viverra lorem. Nulla id pulvinar nulla, ut imperdiet nisl. Donec facilisis auctor nisl non tristique. Aliquam fringilla, felis ut sodales elementum, augue mauris eleifend eros, sit amet ultricies arcu mi quis nisi. Sed eu ipsum nec quam sollicitudin sagittis. Sed at tempor dui. In a leo velit. Aliquam erat volutpat. Curabitur congue orci vel augue interdum, eu scelerisque mi sodales. Vivamus laoreet eleifend viverra."
+
+    },
+    {
+        "id": 4,
+        "title": "Product 4",
+        "image": "product4.jpg",
+        "price": 75,
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus mi nulla, nec pulvinar risus blandit sed. Mauris dapibus nisi lacus, eget venenatis ipsum feugiat a. Aenean gravida sapien scelerisque, varius sem vel, viverra lorem. Nulla id pulvinar nulla, ut imperdiet nisl. Donec facilisis auctor nisl non tristique. Aliquam fringilla, felis ut sodales elementum, augue mauris eleifend eros, sit amet ultricies arcu mi quis nisi. Sed eu ipsum nec quam sollicitudin sagittis. Sed at tempor dui. In a leo velit. Aliquam erat volutpat. Curabitur congue orci vel augue interdum, eu scelerisque mi sodales. Vivamus laoreet eleifend viverra."
+  
+    },
+    {
+        "id": 5,
+        "title": "Product test",
+        "image": "product6.jpg",
+        "price": 75,
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus mi nulla, nec pulvinar risus blandit sed. Mauris dapibus nisi lacus, eget venenatis ipsum feugiat a. Aenean gravida sapien scelerisque, varius sem vel, viverra lorem. Nulla id pulvinar nulla, ut imperdiet nisl. Donec facilisis auctor nisl non tristique. Aliquam fringilla, felis ut sodales elementum, augue mauris eleifend eros, sit amet ultricies arcu mi quis nisi. Sed eu ipsum nec quam sollicitudin sagittis. Sed at tempor dui. In a leo velit. Aliquam erat volutpat. Curabitur congue orci vel augue interdum, eu scelerisque mi sodales. Vivamus laoreet eleifend viverra."
+  
+    }
+    ,
+    {
+        "id": 6,
+        "title": "Product test",
+        "image": "product6.jpg",
+        "price": 75,
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus mi nulla, nec pulvinar risus blandit sed. Mauris dapibus nisi lacus, eget venenatis ipsum feugiat a. Aenean gravida sapien scelerisque, varius sem vel, viverra lorem. Nulla id pulvinar nulla, ut imperdiet nisl. Donec facilisis auctor nisl non tristique. Aliquam fringilla, felis ut sodales elementum, augue mauris eleifend eros, sit amet ultricies arcu mi quis nisi. Sed eu ipsum nec quam sollicitudin sagittis. Sed at tempor dui. In a leo velit. Aliquam erat volutpat. Curabitur congue orci vel augue interdum, eu scelerisque mi sodales. Vivamus laoreet eleifend viverra."
+  
+    }
+    ,
+    {
+        "id": 7,
+        "title": "Product test",
+        "image": "product6.jpg",
+        "price": 75,
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus mi nulla, nec pulvinar risus blandit sed. Mauris dapibus nisi lacus, eget venenatis ipsum feugiat a. Aenean gravida sapien scelerisque, varius sem vel, viverra lorem. Nulla id pulvinar nulla, ut imperdiet nisl. Donec facilisis auctor nisl non tristique. Aliquam fringilla, felis ut sodales elementum, augue mauris eleifend eros, sit amet ultricies arcu mi quis nisi. Sed eu ipsum nec quam sollicitudin sagittis. Sed at tempor dui. In a leo velit. Aliquam erat volutpat. Curabitur congue orci vel augue interdum, eu scelerisque mi sodales. Vivamus laoreet eleifend viverra."
+  
+    }
+    ,
+    {
+        "id": 8,
+        "title": "Product test",
+        "image": "product6.jpg",
+        "price": 75,
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus mi nulla, nec pulvinar risus blandit sed. Mauris dapibus nisi lacus, eget venenatis ipsum feugiat a. Aenean gravida sapien scelerisque, varius sem vel, viverra lorem. Nulla id pulvinar nulla, ut imperdiet nisl. Donec facilisis auctor nisl non tristique. Aliquam fringilla, felis ut sodales elementum, augue mauris eleifend eros, sit amet ultricies arcu mi quis nisi. Sed eu ipsum nec quam sollicitudin sagittis. Sed at tempor dui. In a leo velit. Aliquam erat volutpat. Curabitur congue orci vel augue interdum, eu scelerisque mi sodales. Vivamus laoreet eleifend viverra."
+  
+    }
+  ]
+  
