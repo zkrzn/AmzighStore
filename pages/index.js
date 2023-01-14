@@ -1,8 +1,8 @@
 import Header from './header'
-import AboutUs from './aboutus'
+import Footer from './footer'
 import ProductListinng from './Productlisting'
 import PageCenter from './pageCenter'
-import Select from './select'
+
 
 export default function Layout() {
   return ( 
@@ -10,7 +10,7 @@ export default function Layout() {
     <Header /> 
     <PageCenter />
     <ProductListinng />
-    <AboutUs />
+    <Footer />
   </>
   )
 };

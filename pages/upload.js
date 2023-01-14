@@ -13,10 +13,11 @@ export default function VideoInput({ width, height }) {
   const handleChoose = (event) => {
     inputRef.current.click();
   };
+  
 
   return (
     <>
-    <h1 className="text-black text-center text-8xl m-10"> Video Uploader </h1>
+    <h1 className="text-black text-center text-2xl md:text-6xl m-10"> Video Uploader </h1>
     <div className="relative rounded-lg overflow-hidden shadow-lg bg-gray-100 h-full">
       <input
         ref={inputRef}

@@ -7,4 +7,74 @@
     transition-delay-600: 0.9s;
     transition-timing-function: ease-out;
 }
-  
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+#container {
+	margin: 0 ;
+}
+
+nav {
+	margin: 0;
+	background-color: #fff; 
+;
+}
+
+nav ul {
+	padding: 0;
+    margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:rgb(0, 0, 0);
+	font-size:20px;
+	text-decoration:none;
+}
+
+nav a:hover { 
+	background-color: #fff; 
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+    background-color: #e5e5e5; 
+    left: 11px;
+	top: 20px; /* the height of the main nav */
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+    background-color: #cccaca; 
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+    
+}
+
+	
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ''; }
+li > a:only-child:after { content: ''; }
