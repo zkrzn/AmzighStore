@@ -54,7 +54,7 @@ export default function ImageInput({ width, height }) {
   return (
     <>
       <h1 className="text-black text-center text-2xl md:text-6xl m-5 bol"> Image Uploader </h1>
-      <div className="relative resizer rounded-lg shadow-lg bg-gray-100 h-4/5 w-11/12">
+      <div className="relative  rounded-lg shadow-lg bg-gray-100 h-4/5 w-11/12">
         <input
           ref={inputRef}
           className="hidden"
@@ -63,7 +63,8 @@ export default function ImageInput({ width, height }) {
           accept="image/*"
         />
         <div
-          className="relative  items-center text-center"
+          className="relative items-center text-center"
+          class="resizer"
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
@@ -72,14 +73,14 @@ export default function ImageInput({ width, height }) {
           {source && (
             <img
               ref={imageRef}
-              className="block  object-cover relative cursor-move"
+              className="block object-cover relative"
               src={source}
               style={{
               width: size.width + "px",
               height: size.height + "px",
               top: position.y + "px",
               left: position.x + "px",
-              position: "relative",
+              position: "absolute",
               }}
               />
               )}

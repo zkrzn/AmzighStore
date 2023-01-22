@@ -10,7 +10,6 @@ export default function Layout() {
     <Header /> 
     <PageCenter />
     <ProductListinng />
-    <BackToTop />
     <Footer />
   </>
   )

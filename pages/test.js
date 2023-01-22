@@ -18,9 +18,9 @@ const menu = () => {
       <nav className="bg-white rounded-lg shadow-md ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
             <div className=" flex items-center justify-center">
-                <a href="#" className="m-2 px-3 py-2 rounded-md text-base leading-6 font-bold bg-indigo-200 text-indigo-800 hover:bg-orange-200">Text</a>
-                <a href="#" className="m-2 px-3 py-2 rounded-md text-base leading-6 font-bold bg-indigo-200 text-indigo-800 hover:bg-orange-200">Image</a>
-                <a href="#" className="m-2 px-3 py-2 rounded-md text-base leading-6 font-bold bg-indigo-200 text-indigo-800 hover:bg-orange-200">Video</a>     
+                <a href="./text.js" className="m-2 px-3 py-2 rounded-md text-base leading-6 font-bold bg-indigo-200 text-indigo-800 hover:bg-orange-200">Text</a>
+                <a href="./image.js" className="m-2 px-3 py-2 rounded-md text-base leading-6 font-bold bg-indigo-200 text-indigo-800 hover:bg-orange-200">Image</a>
+                <a href="./uploader.js" className="m-2 px-3 py-2 rounded-md text-base leading-6 font-bold bg-indigo-200 text-indigo-800 hover:bg-orange-200">Video</a>     
           </div>
         </div>
       </nav>

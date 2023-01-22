@@ -53,7 +53,7 @@ const ImageCarousel = () => {
 
 
 export default function pageCenter() {
-    return <>
+  return <>
     {ImageCarousel()}
-    </>
+  </>
 };
