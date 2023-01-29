@@ -14,6 +14,7 @@
     "@next/font": "13.0.7",
     "antd": "^5.1.4",
     "axios": "^1.2.1",
+    "draggable": "^4.2.0",
     "formidable": "^2.1.1",
     "fs": "^0.0.1-security",
     "jquery": "^3.6.3",
@@ -24,7 +25,10 @@
     "react-dnd": "^16.0.1",
     "react-dnd-html5-backend": "^16.0.1",
     "react-dom": "18.2.0",
+    "react-draggable": "^4.4.5",
     "react-dropzone": "^14.2.3",
+    "react-resizable": "^3.0.4",
+    "react-rnd": "^10.4.1",
     "uuid": "^9.0.0"
   },
   "devDependencies": {

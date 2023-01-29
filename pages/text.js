@@ -1,25 +1,56 @@
-import { useState } from 'react';
+import React, { useState } from "react";
+import { Rnd } from "react-rnd";
 
-const ResizableText = () => {
-  const [text, setText] = useState("Ecrire un texte");
-  const [fontSize, setFontSize] = useState(20);
+const TextInput = () => {
+  const [text, setText] = useState("");
+  const [dimension, setDimension] = useState({ width: 200, height: 40 });
+  const [fontSize, setFontSize] = useState(16);
+
+  const handleTextChange = (event) => {
+    setText(event.target.value);
+  };
+
+  const onResize = (e, direction, ref, delta, position) => {
+    setDimension({
+      width: ref.offsetWidth,
+      height: ref.offsetHeight,
+    });
+    setFontSize(ref.offsetHeight * 0.4);
+  };
 
   return (
-    <div className='text-center'>
-      <input 
-        placeholder={text} 
-        onChange={e => setText(e.target.value)} 
-        style={{ fontSize: `${fontSize}px` }}
-        className=" border-2 bg-black text-white text-center"
+    <div className="h-screen flex items-center justify-center">
+      <Rnd
+        style={{
+          fontSize: `${fontSize}px`,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+        size={dimension}
+        onResize={onResize}
+        enableResizing={{
+          top: true,
+          right: true,
+          bottom: true,
+          left: true,
+          topRight: true,
+          bottomRight: true,
+          bottomLeft: true,
+          topLeft: true,
+        }}
+      >
+        <h1 className="p-2 text-center border rounded border-red-300">{text}</h1>
+      </Rnd>
+      <input
+        type="text"
+        value={text}
+        onChange={handleTextChange}
+        className="w-1/2 mt-10 border border-gray-400 p-2"
+        placeholder="Ecrire un texte"
       />
-      <div>
-        <button onMouseDown={() => setFontSize(fontSize - 1)} 
-                className="w-10 h-10 m-5 bg-sky-500 hover:bg-sky-700 rounded shadow text-4xl"> - </button>
-        <button onMouseDown={() => setFontSize(fontSize + 1)} 
-                className="w-10 h-10 m-5 bg-sky-500 hover:bg-sky-700 rounded  shadow text-4xl"> + </button>
-      </div>
     </div>
   );
 };
 
-export default ResizableText;
+export default TextInput;

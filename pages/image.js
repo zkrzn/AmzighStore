@@ -1,15 +1,10 @@
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
+import { Rnd } from "react-rnd";
 
 export default function ImageInput({ width, height }) {
   const inputRef = useRef();
   const [source, setSource] = useState();
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [size, setSize] = useState({ width: 100, height: 100 });
-  const [isResizing, setIsResizing] = useState(false);
-  const [isMoving, setIsMoving] = useState(false);
-  const imageRef = useRef(null);
-  const initialX = useRef(0);
-  const initialY = useRef(0);
+  const [dimension, setDimension] = useState({ width: 300, height: 300 });
 
   const handleFileChange = (event) => {
     const file = event.target.files[0];
@@ -21,40 +16,16 @@ export default function ImageInput({ width, height }) {
     inputRef.current.click();
   };
 
-  const handleMouseDown = (event) => {
-    if (event.target !== imageRef.current) return;
-    initialX.current = event.clientX - position.x;
-    initialY.current = event.clientY - position.y;
-    if (event.target.classList.contains("resizer")) {
-      setIsResizing(true);
-    } else {
-      setIsMoving(true);
-    }
-  };
-
-  const handleMouseMove = (event) => {
-    if (isResizing) {
-      setSize({
-        width: event.clientX - initialX.current,
-        height: event.clientY - initialY.current,
-      });
-    } else if (isMoving) {
-      setPosition({
-        x: event.clientX - initialX.current,
-        y: event.clientY - initialY.current,
-      });
-    }
-  };
-
-  const handleMouseUp = () => {
-    setIsResizing(false);
-    setIsMoving(false);
+  const onResize = (e, direction, ref, delta, position) => {
+    setDimension({
+      width: ref.offsetWidth,
+      height: ref.offsetHeight,
+    });
   };
 
   return (
     <>
-      <h1 className="text-black text-center text-2xl md:text-6xl m-5 bol"> Image Uploader </h1>
-      <div className="relative  rounded-lg shadow-lg bg-gray-100 h-4/5 w-11/12">
+      <div className="relative h-full">
         <input
           ref={inputRef}
           className="hidden"
@@ -62,48 +33,46 @@ export default function ImageInput({ width, height }) {
           onChange={handleFileChange}
           accept="image/*"
         />
-        <div
-          className="relative items-center text-center"
-          class="resizer"
-          onMouseDown={handleMouseDown}
-          onMouseMove={handleMouseMove}
-          onMouseUp={handleMouseUp}
-          onMouseLeave={handleMouseUp}
-        >
+        <div className="flex h-96 items-center justify-center">
           {source && (
-            <img
-              ref={imageRef}
-              className="block object-cover relative"
-              src={source}
-              style={{
-              width: size.width + "px",
-              height: size.height + "px",
-              top: position.y + "px",
-              left: position.x + "px",
-              position: "absolute",
+            <Rnd
+              className="w-fit h-96 object-cover"
+              size={{ width: dimension.width, height: dimension.height }}
+              onResize={onResize}
+              enableResizing={{
+                top: true,
+                right: true,
+                bottom: true,
+                left: true,
+                topRight: true,
+                bottomRight: true,
+                bottomLeft: true,
+                topLeft: true,
               }}
-              />
-              )}
-              {source && (
-              <div
-              className=" absolute bottom-0 right-0 cursor-se-resize"
-              style={{ width: "200px", height: "200px" }}
-              ></div>
-              )}
-              {!source && (
-              <button
-                         className="m-4 bg-red-600 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline"
-                         onClick={handleChoose}
-                       >
+            >
+              <img src={source} alt="Uploaded Image" />
+            </Rnd>
+          )}
+          {!source && (
+            <button
+              className="mt-4 mr-4 bg-red-600 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+              onClick={handleChoose}
+            >
               Choisir une image
-              </button>
-              )}
-              </div>
-              {source && (
-              <div className="p-4 w-full h-full font-bold text-center text-gray-600">
-              </div>
-              )}
-              </div>
-              </>
-);
+            </button>
+          )}
+        </div>
+        {source && (
+          <div className="p-4 font-bold text-center text-gray-600">
+            <button
+              className="mt-4 mr-4 bg-red-600 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+              onClick={handleChoose}
+            >
+              Choisir une image
+            </button>
+          </div>
+        )}
+      </div>
+    </>
+  );
 }
